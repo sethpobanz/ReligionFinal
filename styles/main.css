@@ -25,17 +25,41 @@ main {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 80rem;
+  text-align: left;
+}
+main picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .welcome {
   text-align: center;
 }
 h1 {
   color: var(--color-font);
   font-family: "Anton", sans-serif;
   font-size: 5rem;
-  margin-bottom: 0.5em;
-  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1em;
 }
 h2 {
-  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  color: #36393b;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  padding: 3rem;
+  text-decoration: underline;
 }
 ul {
   list-style: none;
@@ -43,7 +67,14 @@ ul {
 }
 
 p {
-  margin-top: 2rem;
+  margin: 4rem;
+}
+main a {
+  text-decoration: none;
+  color: darkblue;
+}
+main a:hover {
+  color: #c49799;
 }
 
 .hero {
@@ -147,7 +178,6 @@ body .panel {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   padding: 2rem;
-  margin-top: 12rem;
 }
 
 body .panel .text-wrapper {
@@ -156,7 +186,9 @@ body .panel .text-wrapper {
 body .panel .image-wrapper {
   grid-column: 2;
 }
-
+.panel li {
+  list-style: circle;
+}
 @media (min-aspect-ratio: 16/9) {
   .video-foreground {
     height: 300%;
