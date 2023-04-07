@@ -189,6 +189,14 @@ body .panel .image-wrapper {
 .panel li {
   list-style: circle;
 }
+
+.modernpanel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: 2rem;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .video-foreground {
     height: 300%;
